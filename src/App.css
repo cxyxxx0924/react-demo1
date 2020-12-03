@@ -1,12 +1,3 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -26,6 +17,18 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.topBar {
+  border-bottom: solid 1px black;
+}
+
+.bootomBar {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-top: solid 1px black;
 }
 
 @keyframes App-logo-spin {

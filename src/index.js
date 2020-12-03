@@ -1,12 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+// import ComponentClass from './ComponentClass';
+// import ComponentFunction from './ComponentFunction';
+
 import './index.css';
+// import RouterPage from './page/RouterPage';
+// import Home from './page/Home';
 import App from './App';
+
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    {/* <ComponentClass /> */}
+    {/* <ComponentFunction /> */}
+
+    {/* <Provider store={store}>
+      <ReactReduxPage />
+    </Provider>, */}
+    {/* <RouterPage /> */}
+
+
   </React.StrictMode>,
   document.getElementById('root')
 );

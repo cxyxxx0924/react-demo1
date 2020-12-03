@@ -1,23 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
+import LifeCyclepage from './page/LifeCyclepage';
 
 function App() {
+  const name = 'react study'
+  const jsx = <div>hello,{name} </div>
+  const user = {
+    firstName: 'Bmw',
+    lastName: 'Mock'
+  }
+  function formatName(name) {
+    return name.firstName + ' ' + name.lastName
+  }
+  const show = true
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {name}
+      {jsx}
+      {formatName(user)}
+      <p>{show ? name : "login"}</p>
+      <p>{show && name}</p>
+      <LifeCyclepage />
     </div>
   );
 }
